@@ -1,0 +1,24 @@
+﻿<Window x:Class="klucz.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:klucz"
+        mc:Ignorable="d"
+        ResizeMode="NoResize"
+        Background="#5F9EA0"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label FontSize="20px" Foreground="#FAEBD7" Content="Podaj wartośc klucza" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="keyInput" HorizontalAlignment="Left" Margin="150,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="32"/>
+        <Label FontSize="20px" Foreground="#FAEBD7" Content="Podaj tekst" HorizontalAlignment="Left" Margin="10,133,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textInput" VerticalScrollBarVisibility="Auto" AcceptsReturn="True"  HorizontalAlignment="Left" Margin="10,186,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="343" Height="215"/>
+        <Button x:Name="hashButton" Background="#ADD8E6" Padding="10px 5px" Content="Zaszyfruj" HorizontalAlignment="Left" Margin="416,172,0,0" VerticalAlignment="Top" Click="hashButton_Click"/>
+        <TextBlock x:Name="textOutput" Foreground="#F0F8FF" HorizontalAlignment="Left" Margin="513,75,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="254" Width="246"/>
+        <Rectangle   HorizontalAlignment="Left" Height="277" RadiusX="20" RadiusY="20" Margin="500,66,0,0" Stroke="#FAEBD7"  VerticalAlignment="Top" Width="281">
+        </Rectangle>
+        <Label FontSize="20px" Foreground="#FAEBD7" Content="Tekst zaszyfrowany" HorizontalAlignment="Left" Margin="513,10,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="saveToFile" Background="#ADD8E6" Padding="30px 5px" Content="Zapisz szyfr w pliku" HorizontalAlignment="Left" Margin="559,373,0,0" VerticalAlignment="Top" Click="saveToFile_Click"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,33 @@
+﻿<Window x:Class="poczta.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:poczta"
+        mc:Ignorable="d"
+        Title="Nadaj Przesyłkę PESEL : 000000000" Height="450" Width="800">
+    <Grid Margin="0,0,0,-6">
+        <GroupBox Header="Rodzaj przesyłki" Margin="37,34,451,267">
+            <StackPanel Height="150">
+                <RadioButton Name="RadioButton1"  FontSize="16px" VerticalContentAlignment="Center" Margin="10px 5px 10px 5px" IsChecked="True"  Content="Pocztówka" />
+                <RadioButton Name="RadioButton2" FontSize="16px" VerticalContentAlignment="Center" Margin="10px 5px 10px 5px" Content="List"  />
+                <RadioButton Name="RadioButton3" FontSize="16px" VerticalContentAlignment="Center" Margin="10px 5px 10px 5px" Content="Paczka" />
+            </StackPanel>
+        </GroupBox>
+        <Button Content="Sprawdź cene" FontSize="17px" Background="#FFFFFF" Margin="40,173,0,0" HorizontalAlignment="Left" Height="33"  VerticalAlignment="Top" Width="309" Click="Button_Click_1"/>
+        <Image x:Name="ImagePost" HorizontalAlignment="Left" Height="151" Margin="40,220,0,0" VerticalAlignment="Top" Width="180" Source="/pocztowka.png"/>
+        <Label Content="Cena: " Name="Price" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Margin="238,220,0,0" VerticalAlignment="Top"/>
+        <Button Content="Zatwierdź" HorizontalAlignment="Left" Margin="40,388,0,0" VerticalAlignment="Top" Width="716" Click="Button_Click"/>
+        <GroupBox Header="GroupBox" Margin="379,34,28,83">
+            <StackPanel>
+                <Label Content="Ulica z numerem" Margin="10px 10px 0 0" Width="361"/>
+                <TextBox TextWrapping="Wrap" x:Name="StreetNumber" Text="" Width="351" FontSize="16px" VerticalContentAlignment="Center" Height="33"/>
+                <Label Content="Kod pocztowy" Margin="10px 10px 0 0" Width="361"/>
+                <TextBox TextWrapping="Wrap" Text="" Width="351" Name="PostCode" FontSize="16px" VerticalContentAlignment="Center" Height="33"/>
+                <Label Content="Miasto" Margin="10px 10px 0 0" Width="361"/>
+                <TextBox TextWrapping="Wrap" Text="" Width="351" Name="City" FontSize="16px" VerticalContentAlignment="Center" Height="33"/>
+            </StackPanel>
+        </GroupBox>
+
+    </Grid>
+</Window>

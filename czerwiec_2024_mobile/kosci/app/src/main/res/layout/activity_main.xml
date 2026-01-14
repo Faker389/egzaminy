@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5E6D3"
+    tools:context=".MainActivity">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#A52A2A"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:text="Gra w kości. Autor 000000000"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <!-- Throw Dice Button -->
+        <Button
+            android:id="@+id/buttonThrowDice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#CC6600"
+            android:text="RZUĆ KOŚĆMI"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <!-- Dice Container -->
+        <LinearLayout
+            android:background="#FFFFFF"
+            android:id="@+id/diceContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+
+                <ImageView
+                    android:id="@+id/Dice1"
+                    android:layout_width="352dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="3dp"
+                    app:srcCompat="@drawable/question" />
+                <ImageView
+                    android:id="@+id/Dice2"
+                    android:layout_width="352dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="3dp"
+
+                    app:srcCompat="@drawable/question" />
+                <ImageView
+                    android:id="@+id/Dice3"
+                    android:layout_width="352dp"
+                    android:layout_height="52dp"
+
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/question" />
+                <ImageView
+                    android:id="@+id/Dice4"
+                    android:layout_width="352dp"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/question" />
+                <ImageView
+                    android:id="@+id/Dice5"
+                    android:layout_height="52dp"
+
+                    android:layout_width="352dp"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/question" />
+
+                <ImageView
+                    android:id="@+id/Dice6"
+                    android:layout_width="352dp"
+                    android:layout_height="52dp"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/question" />
+        </LinearLayout>
+
+        <!-- Result of throw label -->
+        <TextView
+            android:id="@+id/textThrowResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:text="Wynik tego losowania:"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <!-- Result of throw value -->
+
+
+        <!-- Game result label -->
+        <TextView
+            android:id="@+id/textGameResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="Wynik gry:"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <!-- Game result value -->
+
+
+        <!-- Reset Button -->
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#CC6600"
+            android:text="RESETUJ WYNIK"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+</LinearLayout>

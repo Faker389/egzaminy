@@ -1,0 +1,3 @@
+﻿  konsolowka.cpp
+D:\Pulpit\inf_04\czerwiec 2022\konsolowka\konsolowka\konsolowka.cpp(32,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  konsolowka.vcxproj -> D:\Pulpit\inf_04\czerwiec 2022\konsolowka\x64\Debug\konsolowka.exe

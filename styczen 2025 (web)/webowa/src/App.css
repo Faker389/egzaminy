@@ -1,0 +1,12 @@
+
+main{
+  display: flex;
+  max-inline-size: 100vw;
+  flex-wrap: wrap;
+}
+img{
+
+  inline-size: 350px;
+  margin: 5px;
+  border-radius: 15px;
+}

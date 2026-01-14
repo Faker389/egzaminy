@@ -1,0 +1,28 @@
+﻿<Window x:Class="RGB.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RGB"
+        mc:Ignorable="d"
+        Title="Wzornik kolorów RGB. Wykonał" Height="450" Width="800">
+    <Grid
+        Background="#FFF8DC"
+        >
+        <Rectangle HorizontalAlignment="Center" x:Name="TopRectangle" Fill="#FFFFFF"  Height="91" Margin="0,22,0,0"  VerticalAlignment="Top" Width="684"/>
+        <Label Content="Dobierz kolor suwakami i zapisz przyciskiem:" HorizontalAlignment="Left" Margin="58,152,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.105,0.528" Width="246"/>
+        <Slider x:Name="RSlider" Minimum="0" Maximum="255" HorizontalAlignment="Center"  Margin="0,183,0,0" VerticalAlignment="Top" Width="616" ValueChanged="Slider_ValueChanged"/>
+        <Label Content="R" HorizontalAlignment="Left" Margin="62,178,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="RVal" Content="255" HorizontalAlignment="Left" Margin="713,178,0,0" VerticalAlignment="Top" Width="29"/>
+        <Slider x:Name="GSlider" Minimum="0" Maximum="255" HorizontalAlignment="Center" Margin="0,214,0,0" VerticalAlignment="Top" Width="616" ValueChanged="Slider_ValueChanged_1"/>
+        <Label Content="G" HorizontalAlignment="Left" Margin="62,209,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="GVal" Content="255" HorizontalAlignment="Left" Margin="713,209,0,0" VerticalAlignment="Top" Width="29"/>
+        <Slider x:Name="BSlider" Minimum="0" Maximum="255" HorizontalAlignment="Center" Margin="0,245,0,0" VerticalAlignment="Top" Width="616" ValueChanged="Slider_ValueChanged_2"/>
+        <Label Content="B" HorizontalAlignment="Left" Margin="62,240,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="BVal" Content="255" HorizontalAlignment="Left" Margin="713,240,0,0" VerticalAlignment="Top" Width="29"/>
+        <Button Content="Pobierz" Background="#CD853F" HorizontalAlignment="Left" Margin="303,292,0,0" VerticalAlignment="Top" Height="25" Width="172" Click="Button_Click"/>
+        <Rectangle HorizontalAlignment="Left" x:Name="BottomRectangle" Fill="#FFFFFF" Height="25" Margin="303,358,0,0" Stroke="Black" VerticalAlignment="Top" Width="172"/>
+        <Label Content="255, 255, 255" Name="BottomRGBLabel" HorizontalAlignment="Left" Margin="303,358,0,0" VerticalAlignment="Top" Width="172"/>
+
+    </Grid>
+</Window>

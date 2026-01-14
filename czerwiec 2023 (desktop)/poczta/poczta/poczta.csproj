@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="list.png" />
+    <None Remove="paczka.png" />
+    <None Remove="pocztowka.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="list.png" />
+    <Resource Include="paczka.png" />
+    <Resource Include="pocztowka.png" />
+  </ItemGroup>
+
+</Project>

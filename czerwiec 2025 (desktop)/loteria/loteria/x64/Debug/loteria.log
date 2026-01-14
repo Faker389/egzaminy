@@ -1,0 +1,3 @@
+﻿  loteria.cpp
+D:\Pulpit\inf_04\czerwiec 2025\loteria\loteria\loteria.cpp(54,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  loteria.vcxproj -> D:\Pulpit\inf_04\czerwiec 2025\loteria\x64\Debug\loteria.exe
