@@ -47,5 +47,6 @@ int main()
     cout <<"wartosc przed inkrementacja: "<< FilmObject->getBorrowNumber() << endl;
     FilmObject->incrementBorrowNumber();
     cout << "wartosc przed inkrementacja: " << FilmObject->getBorrowNumber() << endl;
+    delete FilmObject;
 }
 
