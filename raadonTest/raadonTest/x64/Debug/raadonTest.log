@@ -1,0 +1,3 @@
+﻿  raadonTest.cpp
+D:\Pulpit\raadonTest\raadonTest\raadonTest.cpp(83,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  raadonTest.vcxproj -> D:\Pulpit\raadonTest\x64\Debug\raadonTest.exe
